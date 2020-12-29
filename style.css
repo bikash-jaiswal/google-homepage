@@ -2,10 +2,54 @@ html {
   /* padding will stretch the page 
     prevents from happening horizontal scroll bar*/
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh; /*stretch the height 100%*/
-  background-color: gray;
+  margin: 0 auto;
+  padding: 0;
+  max-height: 100vh; /*stretch the height 100%*/
+  background-color: whitesmoke;
+}
+
+.navbar-container {
+  padding: 0;
+  margin-top: 1rem;
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-container .nav-item {
+  /* padding: 10% 10% 10% 10%; */
+  padding: 1rem;
+}
+
+.main-container {
+  display: flexbox;
+  text-align: center;
+  justify-content: center;
+}
+#footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.nav-footer {
+  display: flexbox;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.footer p {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.199);
+}
+.nav-footer .footer-nav-item {
+  padding-left: 1rem;
 }
