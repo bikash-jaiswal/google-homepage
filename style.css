@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-height: 100vh; /*stretch the height 100%*/
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245);
 }
 
 .navbar-container {
