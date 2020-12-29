@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-height: 100vh; /*stretch the height 100%*/
-  background-color: rgb(245, 245, 245);
+  background-color: white;
 }
 
 .navbar-container {
@@ -27,10 +27,31 @@ body {
 }
 
 .main-container {
+  margin-left: 30%;
+  margin-right: 30%;
   display: flexbox;
   text-align: center;
   justify-content: center;
+  align-content: center;
+  /* left: 50%; */
+  /* make image in center regardless of svg size */
+  /* transform: translate(50%, 50%); */
 }
+.main-container img {
+  position: inherit;
+}
+
+.main-container .google-search {
+  border-style: solid;
+  border-color: black;
+  border-radius: 8px;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 1%;
+  /* border-radius: 10%; */
+  /* border-style: solid; */
+}
+
 #footer {
   position: absolute;
   width: 100%;
@@ -52,4 +73,15 @@ body {
 }
 .nav-footer .footer-nav-item {
   padding-left: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .main-container .google-search {
+    width: fit-content;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+    /* border-radius: 10%; */
+    /* border-style: solid; */
+  }
 }
